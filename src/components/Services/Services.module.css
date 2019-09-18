@@ -1,0 +1,9 @@
+.Services {
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+    padding: 40px 0;
+    box-sizing: border-box;
+    text-align: center;
+    color: rgb(82, 82, 82)
+}

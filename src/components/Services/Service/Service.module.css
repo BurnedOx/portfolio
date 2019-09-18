@@ -1,0 +1,43 @@
+.Container {
+    margin: 40px 0;
+}
+
+.Service {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Details {
+    max-width: 40%;
+}
+
+.Details p {
+    font-size: 20px;
+}
+
+.imageContainer {
+    width: 30vw;
+}
+
+.imageContainer img {
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    .Service {
+        flex-flow: column;
+    }
+
+    .Details {
+        max-width: 95%;
+    }
+
+    .imageContainer {
+        width: 80vw;
+    }
+
+    .Details p {
+        font-size: 15px;
+    }
+}

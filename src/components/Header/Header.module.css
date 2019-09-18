@@ -1,0 +1,97 @@
+.HeaderInitial {
+    height: 70px;
+    width: 100%;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.301);
+    background-color: rgba(78, 56, 139, 0.8);
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-flow: column;
+    color: white;
+    transition: height 0.8s;
+}
+
+.HeaderActive {
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.562);
+    background-color: rgb(84, 76, 158);
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-flow: column;
+    z-index: 1000;
+    height: 50px;
+    width: 100%;
+    color: aliceblue;
+    transition: height 0.8s;
+}
+
+.HeaderInitial a, .HeaderActive a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.openMenu {
+    height: 300px;
+}
+
+.logo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    color: rgb(224, 60, 115);
+}
+
+.menu {
+    display: block;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.Navs {
+    display: none;
+    height: 80%;
+    width: 30%;
+    margin: 20px 0;
+}
+
+.showNav {
+    display: block;
+}
+
+.LogoMenuGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+@media (min-width: 900px) {
+    .HeaderInitial, .HeaderInitial a {
+        background-color: transparent;
+        color: rgb(224, 60, 115);
+    }
+
+    .HeaderActive, .HeaderInitial {
+        flex-flow: row;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .Navs {
+        display: block;
+    }
+
+    .LogoMenuGroup{
+        width: 10%;
+    }
+}

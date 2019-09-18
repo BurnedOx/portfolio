@@ -1,0 +1,42 @@
+.Banner {
+    height: 90vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Backdrop {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    z-index: 10;
+    color: aliceblue;
+    background-color: rgba(110, 80, 180, 0.295);
+}
+
+.Heading {
+    position: relative;
+    left: 10%;
+    top: 25%;
+}
+
+.Heading p {
+    width: 40%;
+}
+
+.Button {
+    border: 4px solid white;
+}
+
+@media (max-width: 500px) {
+    .Heading {
+        top: 20%;
+    }
+
+    .Heading p {
+        width: 100%;
+    }
+}

@@ -1,0 +1,18 @@
+.NavItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.NavItems div {
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .NavItems {
+        flex-flow: column;
+    }
+}
